@@ -13,5 +13,5 @@ def test_slice():
     assert isinstance(arrs.my_slice([], 1), list)
     assert arrs.my_slice([], 1) == []
 
-    assert arrs.my_slice([[1, 2, 3]], -1) == [[1, 2, 3]]
-    assert arrs.my_slice([[1, 2, 3]], -2) == [[1, 2, 3]]
+    assert arrs.my_slice([1, 2, 3], -2) == [2, 3]
+    assert arrs.my_slice([1, 2, 3], -4) == [1, 2, 3]
